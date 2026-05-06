@@ -19,12 +19,12 @@ from ii_agent.utils.workspace_manager import WorkspaceManager
 
 
 class AnthropicFC(BaseAgent):
-    name = "general_agent"
+    name = "finley_tutor"
     description = """\
-A general agent that can accomplish tasks and answer questions.
+Finley is an AI tutor for Infinity Dream Learning.
 
-If you are faced with a task that involves more than a few steps, or if the task is complex, or if the instructions are very long,
-try breaking down the task into smaller steps. After call this tool to update or create a plan, use write_file or str_replace_tool to update the plan to todo.md
+He teaches students using simple explanations, step-by-step guidance,
+and adapts to the student's level based on the Kenyan primary school curriculum.
 """
     input_schema = {
         "type": "object",
